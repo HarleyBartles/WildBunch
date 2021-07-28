@@ -1,0 +1,47 @@
+﻿@import './colors.scss';
+
+.button-group-field {
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+
+        &:checked + label {
+            background-color: $blueButton;
+        }
+    }
+
+    label {
+        background-color: $midGreyButton;
+        color: #fff;
+        font-size: 1.0875em;
+        line-height: 1;
+        text-align: center;
+        padding: 6px 8px;
+        margin-right: -1px;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:first-of-type {
+            border-radius: 14px 0 0 14px;
+        }
+
+        &:last-of-type {
+            border-radius: 0 14px 14px 0;
+        }
+
+        &:not(:last-of-type) {
+            border-right: 2px solid $lightGrayButton;
+        }
+    }
+}

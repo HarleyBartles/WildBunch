@@ -1,0 +1,27 @@
+﻿@media (min-width: 768px) {
+    .main-nav {
+        z-index: 1
+    }
+
+    nav.sidebar-sticky {
+        position: fixed;
+        bottom: 0;
+        top: 55px;
+        z-index: 0;
+        width: auto;
+        align-items: flex-start;
+        padding-top: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav.sidebar-sticky {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav.sidebar-sticky {
+        width: 250px;
+    }
+}
